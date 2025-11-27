@@ -1,0 +1,29 @@
+{
+  "template_name": "Default Template",
+  "category": "general",
+  "layout": "product-center",
+  
+  "background": {
+    "type": "solid",
+    "color": "#F5F5F5"
+  },
+
+  "elements": {
+    "product_image": "required",
+    "brand_logo": "optional",
+    "tagline": "optional"
+  },
+
+  "allowed_positions": {
+    "product_image": ["center"],
+    "brand_logo": ["top-left", "top-right"],
+    "tagline": ["bottom-left", "bottom-right"]
+  },
+
+  "supports_badges": true,
+  
+  "badge_styles": {
+    "shape": "circle",
+    "default_color": "#FFD700"
+  }
+}
