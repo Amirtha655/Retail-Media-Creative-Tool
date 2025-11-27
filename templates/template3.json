@@ -1,0 +1,51 @@
+{
+  "name": "Split Lifestyle Layout",
+  "canvas": {
+    "width": 1200,
+    "height": 1400
+  },
+  "layout": {
+    "background_split": {
+      "left_color": "#F5F5F5",
+      "right_image": "lifestyle_image_placeholder"
+    }
+  },
+  "logo": {
+    "x": 60,
+    "y": 60,
+    "width": 220,
+    "height": 220
+  },
+  "product_area": {
+    "x": 700,
+    "y": 300,
+    "width": 400,
+    "height": 400
+  },
+  "headline": {
+    "x": 60,
+    "y": 350,
+    "width": 500,
+    "height": 300,
+    "font_size": 65,
+    "max_characters": 50
+  },
+  "subheadline": {
+    "x": 60,
+    "y": 650,
+    "width": 500,
+    "height": 180,
+    "font_size": 45,
+    "max_characters": 80
+  },
+  "cta": {
+    "x": 60,
+    "y": 900,
+    "width": 350,
+    "height": 130,
+    "background_color": "#2563EB",
+    "text_color": "#FFFFFF",
+    "text": "Learn More"
+  },
+  "safe_zone_padding": 50
+}

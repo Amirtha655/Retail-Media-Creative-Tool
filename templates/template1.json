@@ -1,0 +1,43 @@
+{
+  "name": "Clean Product Focus",
+  "canvas": {
+    "width": 1080,
+    "height": 1080
+  },
+  "layout": {
+    "background_type": "solid",
+    "default_background_color": "#FFFFFF"
+  },
+  "logo": {
+    "x": 40,
+    "y": 40,
+    "width": 180,
+    "height": 180,
+    "alignment": "top-left"
+  },
+  "product_area": {
+    "x": 350,
+    "y": 200,
+    "width": 400,
+    "height": 400,
+    "alignment": "center"
+  },
+  "headline": {
+    "x": 60,
+    "y": 650,
+    "width": 960,
+    "height": 120,
+    "max_characters": 40,
+    "font_size": 60
+  },
+  "cta": {
+    "x": 60,
+    "y": 820,
+    "width": 300,
+    "height": 100,
+    "background_color": "#00539F",
+    "text_color": "#FFFFFF",
+    "text": "Shop Now"
+  },
+  "safe_zone_padding": 30
+}

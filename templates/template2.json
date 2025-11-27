@@ -1,0 +1,51 @@
+{
+  "name": "Price Badge Promo",
+  "canvas": {
+    "width": 1080,
+    "height": 1350
+  },
+  "layout": {
+    "background_type": "gradient",
+    "colors": ["#FDE047", "#F97316"]
+  },
+  "logo": {
+    "x": 50,
+    "y": 50,
+    "width": 200,
+    "height": 200
+  },
+  "product_area": {
+    "x": 300,
+    "y": 250,
+    "width": 500,
+    "height": 500,
+    "shadow": true
+  },
+  "price_badge": {
+    "x": 50,
+    "y": 350,
+    "radius": 150,
+    "background_color": "#FF0000",
+    "text_color": "#FFFFFF",
+    "font_size": 80,
+    "value_field": "price"
+  },
+  "offer_text": {
+    "x": 50,
+    "y": 900,
+    "width": 980,
+    "height": 200,
+    "font_size": 70,
+    "max_characters": 35
+  },
+  "cta": {
+    "x": 350,
+    "y": 1150,
+    "width": 380,
+    "height": 120,
+    "background_color": "#1E3A8A",
+    "text_color": "#FFFFFF",
+    "text": "Buy Now"
+  },
+  "safe_zone_padding": 40
+}
