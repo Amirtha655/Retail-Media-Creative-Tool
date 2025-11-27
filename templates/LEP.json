@@ -1,0 +1,9 @@
+{
+  "template_name": "Low Everyday Price",
+  "elements": {
+    "badge": "LEP",
+    "badge_color": "#FFD700",
+    "required_tags": ["Low Everyday Price"],
+    "layout": "hero-left-product-right"
+  }
+}
