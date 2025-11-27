@@ -1,0 +1,13 @@
+{
+  "retailer": "Tesco",
+  "rules": {
+    "logo_required": true,
+    "allowed_logo_positions": ["top-left", "top-right"],
+    "font_family": ["Tesco Modern", "Arial"],
+    "color_palette": ["#00539F", "#EE1C2E", "#FFFFFF"],
+    "lep_tag_required": true,
+    "alcohol_warning_required": true,
+    "min_font_size": 14,
+    "disallowed_phrases": ["Best Price in the World", "Guaranteed Cheapest"]
+  }
+}
