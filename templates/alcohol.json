@@ -1,0 +1,25 @@
+{
+  "template_name": "Alcohol Template",
+  "category": "alcohol",
+  "layout": "full-width-product",
+  "background_style": "dark-gradient",
+  
+  "required_elements": {
+    "warning_text": "Drink Responsibly. 18+ Only.",
+    "warning_color": "#FF0000",
+    "warning_font_size": 12,
+    "legal_badge": true
+  },
+
+  "allowed_positions": {
+    "product": ["center", "right"],
+    "warning_text": ["bottom-center", "bottom-left"],
+    "brand_logo": ["top-left", "top-right"]
+  },
+
+  "design_restrictions": {
+    "max_brightness": 70,
+    "no_children_images": true,
+    "no_fun_or_party_context": true
+  }
+}
