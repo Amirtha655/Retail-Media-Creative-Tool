@@ -1,39 +1,36 @@
-def validate_creative(creative, rules):
+def validate_creative_engine(creative, rules):
     errors = []
     warnings = []
     suggestions = []
 
-    # 1. Forbidden phrases check
+    # Forbidden phrases
     for phrase in rules["rules"]["disallowed_phrases"]:
         if phrase.lower() in creative["text"].lower():
-            errors.append(f"Forbidden phrase found: {phrase}")
+            errors.append(f"Forbidden phrase: {phrase}")
             suggestions.append("Remove restricted marketing claims.")
 
-    # 2. Required logo check
-    if rules["rules"]["logo_required"] and "brand_logo" not in creative:
+    # Logo validation
+    if rules["rules"]["logo_required"] and not creative.get("brand_logo"):
         errors.append("Brand logo is missing.")
-        suggestions.append("Upload a brand logo.")
+        suggestions.append("Upload your brand logo.")
 
-    # 3. Alcohol creative checks
+    # Alcohol warning
     if creative.get("category") == "alcohol":
-        alcohol_rules = rules["rules"]["alcohol_warning_required"]
-        if alcohol_rules and "warning_text" not in creative:
-            errors.append("Alcohol warning text is missing.")
+        if not creative.get("warning_text"):
+            errors.append("Alcohol warning text missing.")
             suggestions.append("Add: 'Drink Responsibly. 18+ Only.'")
 
-    # 4. Minimum font size
-    if creative["font_size"] < rules["rules"]["min_font_size"]:
-        warnings.append("Font size is too small.")
-        suggestions.append("Increase text size to improve readability.")
-
-    # 5. Logo position check
-    if "brand_logo" in creative:
+    # Logo position
+    if creative.get("brand_logo"):
         if creative["logo_position"] not in rules["rules"]["allowed_logo_positions"]:
-            warnings.append("Logo not in recommended position.")
-            suggestions.append(f"Recommended positions: {rules['rules']['allowed_logo_positions']}")
+            warnings.append("Logo placed incorrectly.")
+
+    # Font size
+    if creative["font_size"] < rules["rules"]["min_font_size"]:
+        warnings.append("Font size too small.")
+        suggestions.append("Increase font size.")
 
     return {
-        "status": "fail" if errors else "pass",
         "errors": errors,
         "warnings": warnings,
         "suggestions": suggestions

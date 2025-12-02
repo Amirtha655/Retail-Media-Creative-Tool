@@ -1,13 +1,17 @@
 {
   "retailer": "Tesco",
   "rules": {
+    "disallowed_phrases": [
+      "best price guaranteed",
+      "number one product",
+      "free for all",
+      "super cheap",
+      "lowest ever"
+    ],
     "logo_required": true,
-    "allowed_logo_positions": ["top-left", "top-right"],
-    "font_family": ["Tesco Modern", "Arial"],
-    "color_palette": ["#00539F", "#EE1C2E", "#FFFFFF"],
-    "lep_tag_required": true,
-    "alcohol_warning_required": true,
-    "min_font_size": 14,
-    "disallowed_phrases": ["Best Price in the World", "Guaranteed Cheapest"]
+    "allowed_logo_positions": ["top-left", "top-right", "bottom-left", "bottom-right"],
+    "min_font_size": 12,
+    "max_discount_percentage": 50,
+    "alcohol_warning_required": true
   }
 }

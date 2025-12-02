@@ -84,7 +84,7 @@ class LayoutInput(BaseModel):
     # You can add more layout items as needed
 
 
-@app.post("/validate")
+@app.post("/validators")
 def validate_layout(layout: LayoutInput):
     rules = load_rules()
     return validate_creative_engine(layout.dict(), rules["Tesco"])
@@ -97,7 +97,7 @@ def creative_risk_score(layout: LayoutInput):
     return calculate_score(validation_output)
 
 
-@app.post("/auto-fix")
+@app.post("/auto_fix")
 def auto_fix_creative(layout: LayoutInput):
     rules = load_rules()
     validation_output = validate_creative_engine(layout.dict(), rules["Tesco"])

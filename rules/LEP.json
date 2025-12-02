@@ -1,9 +1,19 @@
 {
-  "template_name": "Low Everyday Price",
-  "elements": {
-    "badge": "LEP",
-    "badge_color": "#FFD700",
-    "required_tags": ["Low Everyday Price"],
-    "layout": "hero-left-product-right"
+  "name": "LowEverydayPrice",
+  "rules": {
+    "disallowed_phrases": [
+      "cheapest ever",
+      "never before price",
+      "best offer",
+      "limited time only"
+    ],
+    "logo_required": false,
+    "allowed_logo_positions": [
+      "top-left",
+      "top-right"
+    ],
+    "min_font_size": 14,
+    "max_discount_percentage": 10,
+    "price_required": true
   }
 }

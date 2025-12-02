@@ -1,4 +1,4 @@
-def auto_fix(creative, validation_output):
+def auto_fix_layout(creative, validation_output):
     fixed = creative.copy()
 
     # Fix missing alcohol warning
@@ -7,11 +7,11 @@ def auto_fix(creative, validation_output):
             fixed["warning_text"] = "Drink Responsibly. 18+ Only."
 
     # Fix small font
-    if "Font size is too small." in validation_output["warnings"]:
+    if "Font size too small." in validation_output["warnings"]:
         fixed["font_size"] = 16
 
     # Fix logo position
-    if "Logo not in recommended" in str(validation_output["warnings"]):
+    if "Logo placed incorrectly" in validation_output["warnings"]:
         fixed["logo_position"] = "top-right"
 
     return fixed
